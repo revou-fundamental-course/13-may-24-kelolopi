@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div>
+        <h1 class="header">Welcome to Katik</h1>
+        <p class="textcenter">Hai Sobat, Selamat datang di Katik :]
+        <br>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling segitiga</p>
+    </div>
+
+    <div class="content">
+        <button class="fullButton active" id="btnLuasSegitiga">Luas Segitiga</button>
+        <button class="fullButton" id="btnKelilingSegitiga">Keliling Segitiga</button>
+
+        <div id="luasSegitigaDiv">
+            <h2 class="header">Luas Segitiga</h2>
+            <img src="assets/segitiga.jpg" alt="Gambar Luas Segitiga" class="center">
+            <p>Rumus Luas Segitiga yaitu :</p>
+            <p class="equation">L = 1/2 x a x t</p>
+            <p>Dimana :<br>L = Luas<br>a = Panjang Alas<br>t = Tinggi</p>
+
+            <hr>
+            <h1 class="equation">Hitung Luas Segitiga</h1>
+            <form id="formLuas">
+                <label>Alas Segitiga :</label> 
+                <input type="text" class="inputText" id="alasLuasSegitigaField">
+
+                <label>Tinggi Segitiga :</label>
+                <input type="text" class="inputText" id="tinggiLuasSegitigaField">
+             
+                <input type="submit" class="buttonHitung" value="Hitung">
+                <input type="reset" value="Reset" class="buttonReset">
+            </form>
+            <div class="result" id="hasilLuasSegitigaDiv"></div>
+        </div>
+        <div id="kelilingSegitigaDiv">
+            <h2 class="header">Keliling Segitiga</h2>
+            <img src="assets/segitiga.jpg" alt="Gambar Luas Segitiga" class="center">
+            <p>Rumus Keliling Segitiga yaitu :</p>
+            <p class="equation">K = S1 + S2 + S3</p>
+            <p>Dimana :<br>K = Keliling<br>S1 = Sisi A<br>S2 = Sisi B<br>S3 = Sisi C</p>
+
+            <hr>
+            <h1 class="equation">Hitung Keliling Segitiga</h1>
+            <form id="formKeliling">
+                <label>Sisi A :</label> 
+                <input type="text" class="inputText" id="sisiAKelilingSegitigaField">
+
+                <label>Sisi B :</label> 
+                <input type="text" class="inputText" id="sisiBKelilingSegitigaField">
+
+                <label>Sisi C :</label> 
+                <input type="text" class="inputText" id="sisiCKelilingSegitigaField">
+
+                <input type="submit" class="buttonHitung" value="Hitung">
+                <input type="reset" value="Reset" class="buttonReset">
+            </form>
+            <div class="result" id="hasilKelilingSegitigaDiv"></div>
+        </div>
+    </div>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
